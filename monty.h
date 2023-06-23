@@ -56,6 +56,8 @@ typedef struct context_s
 	int lifi;
 } context_t;
 extern context_t context;
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
+
 
 /* execute.c */
 int execute(char *command, stack_t **stack, unsigned int line_number, FILE *file);
